@@ -8,11 +8,11 @@ use Illuminate\Http\Request;
 class MovieController extends Controller
 {
     
-    public function index()
+    public function getMovies()
     {
-        // $movies = Movie::all();
+        $movies = Movie::all();
 
-        // return view('movies', compact('movies'));
+        return view('movies', compact('movies'));
     }
 
 }

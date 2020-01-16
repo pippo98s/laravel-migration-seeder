@@ -11,5 +11,10 @@
 |
 */
 
-Route::get('/movies', 'ComicsController@getComics');
+Route::get('/' , 'MyController@index');
+
+Route::get('/comics', 'ComicsController@getComics');
+
+Route::get('/movies', 'MovieController@getMovies');
+
 
