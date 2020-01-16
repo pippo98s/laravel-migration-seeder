@@ -8,7 +8,8 @@
                     <li>{{ $comic->titolo }}</li>
                     <li>{{ $comic->autore }}</li>
                     <li>{{ $comic->anno }}</li>
-                    <li>{{ $comic->recensioneEvoto }}</li>
+                    <li>{{ $comic->recensione }}</li>
+                    <li>{{ $comic ->voto}}</li>
                 </ul>
             </li>
             <br>

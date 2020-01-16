@@ -18,7 +18,8 @@ class CreateComicsTable extends Migration
             $table -> string('titolo');
             $table -> string('autore');
             $table -> integer('anno');
-            $table -> string('recensioneEvoto');
+            $table -> string('recensione');
+            $table -> integer('voto');
             $table->timestamps();
         });
     }

@@ -18,7 +18,8 @@ class ComicsTable extends Seeder
                 'titolo' => $faker->word,
                 'autore' => $faker -> name,
                 'anno' => $faker -> year,
-                'recensioneEvoto' => $faker -> text
+                'recensione' => $faker -> text,
+                'voto' => $faker -> numberBetween($min = 0, $max = 5)
             ];
 
             $comic = new Comic;

@@ -12,6 +12,7 @@ class Comic extends Model
         'titolo',
         'autore', 
         'anno',
-        'recensioneEvoto'
+        'recensione',
+        'voto'
     ];
 }
