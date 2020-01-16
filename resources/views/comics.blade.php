@@ -1,5 +1,10 @@
 @extends('layouts.app')
 
+@section('link-css')
+    <link rel="stylesheet" href="{{ mix ('css/comics.css') }}">
+    
+@endsection
+
 @section('title-document')
     Comics
 @endsection
@@ -8,7 +13,7 @@
     <h1>Tabella comics</h1>
     <ol type="I">
         @foreach($comics as $comic)
-            <li>
+            <li class="comic">
                 <ul>
                     <li><strong>titolo: </strong> {{ $comic->titolo }}</li>
                     <li><strong>autore: </strong> {{ $comic->autore }}</li>

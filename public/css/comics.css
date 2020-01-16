@@ -1,0 +1,36 @@
+body {
+  background-color: #532c47;
+}
+
+h1 {
+  color: red;
+}
+
+.comic {
+  margin: 10px 0px;
+  border-radius: 10px;
+  max-width: 500px;
+}
+
+.comic:nth-of-type(odd) {
+  color: violet;
+  background-color: navy;
+  float: left;
+  clear: both;
+}
+
+.comic:nth-of-type(odd) strong {
+  color: wheat;
+}
+
+.comic:nth-of-type(even) {
+  color: #1a5a0a;
+  background-color: #dfe20e;
+  float: right;
+  clear: both;
+}
+
+.comic:nth-of-type(even) strong {
+  color: #0f580c;
+}
+

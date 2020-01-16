@@ -1,0 +1,32 @@
+body{
+  background-color: rgb(83, 44, 71);
+}
+
+h1{
+  color: red;
+}
+.comic{
+  margin: 10px 0px;
+  border-radius: 10px;
+  max-width: 500px;
+
+}
+.comic:nth-of-type(odd){
+  color: violet;
+  background-color: navy;
+  float: left;
+  clear: both;
+  strong{
+    color: wheat;
+  }
+}
+
+.comic:nth-of-type(even){
+  color: rgb(26, 90, 10);
+  background-color: rgb(223, 226, 14);
+  float: right;
+  clear: both;
+  strong{
+    color: rgb(15, 88, 12);
+  }
+}

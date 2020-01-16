@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
-@section('title-document')
-    Movies
+@section('link-css')
+    <link rel="stylesheet" href="{{ mix ('css/movies.css') }}">
 @endsection
 
 @section('content')
     <h1>Tabella movies</h1>
     <ol>
         @foreach($movies as $movie)
-            <li>
+            <li class="movie">
                 <ul>
                     <li> <strong>titolo : </strong> {{ $movie->title }}</li>
                     <li> <strong>annno : </strong> {{ $movie->year }}</li>
